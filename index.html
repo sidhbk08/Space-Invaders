@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Creepster&effect=emboss|neon' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Orelega One' rel='stylesheet'>
+    <link rel="stylesheet" href="style/css_style.css">
+    <audio id="theme_song" autoplay loop> 
+        <source src="./audio/data_Chill In the Space.mp3" type="audio/mpeg" />
+    </audio>
+    <title>Space Invader</title>
+</head>
+<body>
+
+    <div class="heading font-effect-emboss font-effect-neon">
+        <header>SPACE INVADERS</header>
+    </div>
+    <div class="container">
+
+        <div class="mainArea">
+            <div id="gameArea">
+                <div>
+                    <img src="images/ship1.png" id="curShip">
+                </div>
+                <h1 id="countdown">CHOOSE LEVEL AND SPACESHIP THEN CLICK START TO PLAY</h1>
+            </div>
+        </div>
+
+        <div class="scoreArea">
+            <header class="scoreHead font-effect-emboss font-effect-neon">SCORECARD</header>
+            <h6>SCORE : <span id="score">0/27</span></h6>
+            <h6>LIVES : <img class="star" id="star1" src="images/star.png">
+                <img class="star" id="star2" src="images/star.png">
+                <img class="star" id="star3" src="images/star.png">
+            </h6>
+            <div id="buttons">
+                <button id='start' class="buttons" onclick="start()"><b>START</b></button>
+                <button id='restart' class="buttons" onclick="restart()"><b>RESTART</b></button>
+                <button id='easy' class="buttons" onclick="easy()"><b>EASY</b></button>
+                <button id='hard' class="buttons" onclick="hard()"><b>HARD</b></button>
+            </div>
+            <h6>CHOOSE YOUR SPACESHIP</h6>
+            <div id="ships">
+                <img src="./images/ship1.png" id="ship1">
+                <img src="./images/ship2.png" id="ship2">
+                <img src="./images/ship3.png" id="ship3">
+            </div>
+        </div>
+
+    </div>
+    <script src="script/main.js"></script>
+</body>
+</html>
